@@ -93,7 +93,8 @@ mobileMenu.addEventListener("click",function(e){
 	
 })
 window.addEventListener("mouseup",function(e){
+	if(!e.target.matches("div.modal_menu") && !e.target.matches("div.sDivs") && !e.target.matches("p.para") && !e.target.matches("div.mMenu")){
 	modalMenu.classList.remove("modal_wrapper-active-menu")
 	
-
+	}
 })
